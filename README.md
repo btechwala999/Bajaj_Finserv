@@ -113,11 +113,6 @@ The application is fully responsive:
 - Geolocation-based doctor suggestions
 - Dark mode support
 
-## License
-
-MIT
-
 ## Acknowledgements
 
 - [React Router](https://reactrouter.com/) for routing
-- [GitHub Pages](https://pages.github.com/) for hosting
