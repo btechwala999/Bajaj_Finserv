@@ -1,0 +1,226 @@
+.doctor-list {
+  flex: 1;
+  margin-left: 30px;
+  padding-left: 20px;
+}
+
+.doctor-card {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.doctor-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  background-color: #0f4c81;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.doctor-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.doctor-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  overflow-wrap: break-word;
+}
+
+.doctor-specialty {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.doctor-introduction {
+  color: #666;
+  font-size: 14px;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.doctor-languages, 
+.doctor-experience, 
+.doctor-location, 
+.doctor-clinic {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #555;
+  margin-right: 4px;
+}
+
+.doctor-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.doctor-fee {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.consultation-types {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.consult-badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.consult-badge.video-consult {
+  background-color: #e1f5fe;
+  color: #0288d1;
+}
+
+.consult-badge.in-clinic {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.book-appointment {
+  background-color: #0f4c81;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.book-appointment:hover {
+  background-color: #0d3f6a;
+}
+
+.loading, .error, .no-doctors {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #666;
+  font-size: 16px;
+}
+
+.no-doctors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.no-results-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.no-doctors h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.no-doctors p {
+  font-size: 16px;
+  color: #666;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.error {
+  color: #e53935;
+}
+
+@media (max-width: 768px) {
+  .doctor-card {
+    flex-direction: column;
+  }
+  
+  .doctor-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .doctor-booking {
+    margin-top: 15px;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .doctor-fee {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  
+  .consultation-types {
+    margin-bottom: 0;
+    margin-right: 15px;
+    flex-direction: row;
+  }
+  
+  .consult-badge {
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+} 
